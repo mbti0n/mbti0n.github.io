@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Jimmy Bui - Project 1</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<body>
+    <header>
+        <div id="headerContainer">
+            <p id="pageName"><a id="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
+            <nav id="links">
+                <a id="navButton" style="border-bottom: 3px solid" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a> 
+                <a id="navButton" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
+                <a id="navButtonSpecial" href="https://mbti0n.github.io/nichesite">NicheSite</a>
+            </nav>
+        </div>
+        <section id="info">
+            <div id="textInfo">
+                <img id="profile" src="img/profile.jpeg" alt="Personal profile picture">
+                <h2 id="name">Jimmy Bui</h2>
+                <div id="contactLinks">
+                    <a id="socialButton" href="mailto:jimmybui2021@yahoo.com"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">mail</i>Mail</a>
+                    <a id="socialButton" href="https://www.linkedin.com/in/jimmy-bui-mbti0n/">LinkedIn</a>
+                    <a id="socialButton" href="https://github.com/mbti0n"> GitHub</a>
+                </div>
+                <p>UCF undergraduate in Information Technology with dedication and experience in web and backend development, proficient in Python, HTML, CSS, and PHP. Former widget designer on iOS and Android. A hobbyist photographer. Hablo español también, by the way.</p>
+            </div>
+        </section>
+    </header>
+    <article>
+        <h1 style="display: none">Jimmy Bui</h1>
+
+        <section id="card">
+            <h2>Education</h2>
+            <div id="educationContainer">
+                <section id="valencia">
+                    <img id="logo" src="img/valencia.jpeg" alt="Valencia College logo">
+                    <div>
+                        <h3>Valencia College</h3>
+                        <p>AA General Studies</p>
+                        <p>Aug 2021 - Dec 2023</p>
+                    </div>
+                </section>
+                <section id="ucf">
+                    <img id="logo" src="img/ucf.jpeg" alt="UCF logo">
+                    <div>
+                        <h3>University of Central Florida</h3>
+                        <p>Information Technology</p>
+                        <p>Expected graduation in Fall 2026</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="card">
+            <h2>Projects</h2>
+            <p id="desc">My top 6 (not 7) projects I have done so far.</p>
+            <div id="projectContainer">
+                <section onclick="location.href='https://mbti0n.github.io/nichesite';" id="projectCardHome" style="background: #2A3AEF">
+                    <img id="projectLogo" style="scale: 1.4" src="img/nichesite.png" alt="NicheSite logo">
+                    <div>
+                        <h3>NicheSite</h3>
+                        <p>A niche website for niche needs.</p>
+                        <p><span id="flair">Web</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://github.com/mbti0n/wordle-clone-python';" id="projectCardHome" style="background: #43763c">
+                    <img id="projectLogo" style="scale: 1.6" src="img/wordle-clone-python.png" alt="QuikMafs logo">
+                    <div>
+                        <h3>wordle-clone-python</h3>
+                        <p>A basic Wordle clone, written in Python</p>
+                        <p><span id="flair">CLI</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://github.com/mbti0n/Custom-CSS-Collection/#ChatGPT/';" id="projectCardHome" style="background: #343541">
+                    <img id="projectLogo" style="scale: 1.6" src="img/classicgpt.png" alt="ClassicGPT logo">
+                    <div>
+                        <h3>ClassicGPT</a></h3>
+                        <p>Stripped-down ChatGPT to match the functionality of the old UI from 2022-2023</p>
+                        <p><span id="flair">Web</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://github.com/tarokeitaro/ndcord';" id="projectCardHome" style="background: #0966bd">
+                    <img id="projectLogo" style="scale: 1.5" src="img/ndcord.png" alt="ndcord logo">
+                    <div>
+                        <h3>ndcord</a></h3>
+                        <p><em>Pull request</em><p>
+                        <p>Simple Discord Rich Presence for Navidrome</p>
+                        <p><span id="flair">API</span> <span id="flair">Discord</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://mbti0n.netlify.app';" id="projectCardHome" style="background: #1D1F28">
+                    <img id="projectLogo" style="scale: 1.5" src="img/personallinks.png" alt="personalLinks logo">
+                    <div>
+                        <h3>personalLinks</h3>
+                        <p>A Linktree-inspired personal link website.</p>
+                        <p><span id="flair">Web</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://github.com/mbti0n/Nokia-E7-SurvivalKit';" id="projectCardHome" style="background: black">
+                    <img id="projectLogo" style="scale: 1.6" src="img/nokia-e7.png" alt="Nokia E7 Survival Kit logo">
+                    <div>
+                        <h3>Nokia E7 Survival Kit</h3>
+                        <p>A guide to use a Nokia E7 in modern days.</p>
+                        <p><span id="flair">Guide</span></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="card">
+            <h2>Experiences</h2>
+            <div id="experienceContainer">
+                <section id="experienceCard">
+                    <div id="rect1">
+                        <img id="rectCover" src="https://i0.wp.com/wisecommerce.io/wp-content/uploads/2025/04/wisecommerce_ci_160_white.png?w=200&ssl=1">
+                    </div>
+                    <div id="experienceInfo">
+                        <h3 id="experienceHeading">AI Training</h3>
+                        <p><strong>Wise Commerce, based in Seoul, South Korea, May 2024 - July 2024</strong></p>
+                        <ul>
+                            <li>Fine-tuning AI features for Wise Commerce's eCommerce platform.</li>
+                            <li>Got familiar with the process of integrating AI and understanding the cost of AI data training and usage into an organization's product using OpenAI API.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="experienceCard">
+                    <div id="rect2"></div>
+                    <div id="experienceInfo">
+                        <h3 id="experienceHeading">Widget Designer</h3>
+                        <h5></h5>
+                        <p style="padding-bottom: 15px">Designing widgets for iOS and Android.</p>
+                        <a id="socialButton" href="https://mbtion.notion.site/MBtion-4a6f2cea8ede4da0a8d5b36558eece03?pvs=73">Explore</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="card">
+            <h2>Skills</h2>
+            <p id="desc">The bigger the text is, the more proficient I am with these skills.</p>
+            <p id="skillsContainer"><span style="font-size: 60px">Python</span>  <span style="font-size: 40px">HTML</span>  <span style="font-size: 40px">CSS</span>  <span style="font-size: 40px">PHP</span></p>
+            <p id="skillsContainer"><span style="font-size: 20px">C</span>  <span style="font-size: 20px">Java</span> <span style="font-size: 20px">JavaScript <span style="font-size: 16px">Digital design</span>  <span style="font-size: 16px">R</span>  <span style="font-size: 16px">Lua</span> <span style="font-size: 16px">LaTeX</span>  <span style="font-size: 16px">bash</span></p>
+        </section>
+    </article>
+
+    <hr>
+    <footer>
+        <p>MBtion // Jimmy Bui • <span id="yearCurrent"><script>document.getElementById("yearCurrent").textContent = new Date().getFullYear()</script></span> | <span style="color: #b8b8b8">Based in Orlando, FL.</span></p>
+    </footer>
+</body>
+</html>

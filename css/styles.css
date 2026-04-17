@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Default tag configurations */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+    font-size: 17px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 21px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    padding-top: 20px;
+    letter-spacing: 1.6px;
+    margin-bottom: 15px
+}
+
+p {
+    letter-spacing: 0.4px;
+    margin-bottom: 13px;
+    line-height: 1.5;
+}
+
+li {
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+h1, h2 {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    padding: 0px 2.5px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    margin: 15px;
+}
+
+#logo {
+    margin: 20px;
+    width: 120px;
+}
+
+img {
+    display: block;
+    width: 100px;
+}
+
+#info {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#educationContainer {
+    display: flex;
+    gap: 15px;
+}
+#valencia {
+    width: 100%;
+    background-color: #BE3427;
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#ucf {
+    width: 100%;
+    display: flex;
+    background-color: #231F20;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#textInfo {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#desc {
+    font-size: 16px;
+}
+
+#card {
+    width: 65%;
+    padding: 25px 20px 25px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #424242;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#cardProject {
+    padding: 25px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: #424242;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#projectCard {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 5px;
+    background-color: #212121;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#flair {
+    background: #ffffff;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    color: black;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#projectCard:hover, #projectCardHome:hover, #experienceCard:hover, #valencia:hover, #ucf:hover {
+    scale: 1.02;
+    transition: 0.25s;
+}
+
+#rect1 {
+    background: black;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+#rectCover {
+    scale: 1.6;
+    margin: auto
+}
+
+#rect2 {
+    background-image: url('../img/widgy.jpeg');
+    width: 100%;
+    height: 120px;
+}
+
+#projectCardHome {
+    padding: 25px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    background-color: #424242;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#experienceCard {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    padding: 0px 0px 25px;
+    /* margin-top: 25px; */
+    background-color: #212121;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#experienceInfo {
+    padding: 25px;
+}
+
+footer {
+    text-align: center;
+}
+
+header {
+    background-image: url("../img/cover1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Configurations by IDs */
+#headerContainer {
+    display: flex;
+    padding: 0px 15px;
+    align-items: center;
+    background-color: #000000ae;
+    height: 50px;
+}
+
+#links {
+    margin-left: auto;
+    font-weight: 600;
+}
+
+#contactLinks {
+    display: inline-flex;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#linkText {
+    font-size: 10px;
+}
+
+#pageName {
+    margin-top: 15px;
+    letter-spacing: 0.8px;
+}
+
+#pageNameButton {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+}
+
+#navButton {
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+#navButton:hover, #navButton:active {
+    border-bottom: 3px solid;
+}
+
+#navButtonSpecial {
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 8px 12px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    background: #2A3AEF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#navButtonSpecial:hover, #navButtonSpecial:active {
+    background: #5862d5;
+    transition: 0.25s;
+}
+
+#socialButton {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 10px;
+    background: white;
+    letter-spacing: 0.8px;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#socialButton:hover, #socialButton:active {
+    background: #b2b5c1;
+    transition: 0.25s;
+}
+
+
+#profile {
+    margin-right: 100%;
+    margin-left: 0%;
+    padding: 25px 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+#linkedin, #linkClick {
+    font-size: 16px;
+    padding-bottom: 0px;
+}
+
+#linkedin:active, #linkedin:visited, #linkedin:link {
+    border-bottom: 0px;
+    background-color: transparent;
+    transition: 0.25s;
+}
+
+#linkedin:hover {
+    background-color: blue;
+    color: white;
+}
+
+#linkClick:active, #linkClick:visited, #linkClick:link {
+    border-bottom: 0px;
+    background-color: transparent;
+    transition: 0.25s;
+}
+
+#linkClick:hover {
+    background-color: #cad3f5;
+    color: #24273a;
+}
+
+#project {
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    gap: 5px;
+    text-align: left;
+    background-color: #0000005e;
+}
+
+#name {
+    font-size: 60px;
+}
+
+#mentionLink {
+    padding: 0px;
+    font-size: 17px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+#projectCardContainer {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+#projectContainer {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+#experienceContainer {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+#experienceHeading {
+    padding-top: 0px;
+}
+
+#mainPageContainer {
+    width: 80%;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projectLink {
+    padding: 0px;
+}
+
+#skills {
+    text-align: center;
+}
+
+#skillsContainer {
+    text-align: center;
+}
+
+/* Responsive UI */
+@media screen and (max-width: 700px) {
+    #headerContainer {
+        display: block;
+        justify-content: left;
+        margin-left: 0px;
+        padding: 0px 0px;
+        margin-bottom: 45px;
+        background: #000000ae
+    }
+
+    nav {
+        background: #000000ae
+    }
+
+    #navButtonSpecialNormal {
+        display: none
+    }
+
+    #navButtonSpecialBig {
+        display: inline !important
+    }
+
+    #navText {
+        display: none
+    }
+
+    .material-icons {
+        font-size: 20px !important;
+        padding: 0px !important
+    }
+
+    #pageName {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #textInfo {
+        width: 90%;
+    }
+
+    #linkText, #pageName {
+        text-align: center;
+    }
+
+    #educationContainer {
+        display: block;
+    }
+
+    #valencia, #ucf {
+        margin-bottom: 10px;
+    }
+
+    #card {
+        width: 90%;
+    }
+
+    #mainPageContainer {
+        width: 95%
+    }
+
+    #projectCard {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #projectContainer, #projectCardContainer{
+        display: block;
+    }
+
+    #cardProject {
+        padding: 30px 20px 10px;
+    }
+
+    #projectCardHome {
+        display: flex;
+        margin-top: 25px;
+    }
+
+    #experienceContainer {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    #experienceCard {
+        margin-top: 25px;
+    }
+
+    img {
+        display: block;
+    }
+
+    #logo {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #projectLogo {
+        margin: 20px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1100px) {
+    img {
+        display: block;
+    }
+
+    #textInfo {
+        width: 90%;
+    }
+
+    #mainPageContainer, #card {
+        width: 90%;
+    }
+
+    #projectCard, #projectCardHome {
+        flex: 1 1 45%;
+        box-sizing: border-box;
+    }
+
+    #projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    img {
+        display: block;
+    }
+
+    #textInfo {
+        width: 80%;
+    }
+
+    #mainPageContainer, #card {
+        width: 80%;
+    }
+
+    #projectCard, #projectCardHome {
+        width: 44%
+    }
+
+    #projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+    img {
+        display: block;
+    }
+
+    #textInfo {
+        width: 75%;
+    }
+
+    #mainPageContainer, #card {
+        width: 75%;
+    }
+
+    #projectCard, #projectCardHome {
+        width: 44%
+    }
+
+    #projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
