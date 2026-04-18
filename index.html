@@ -32,9 +32,9 @@
                 <img id="profile" src="img/profile.jpeg" alt="Personal profile picture">
                 <h2 id="name">Jimmy Bui</h2>
                 <div id="contactLinks">
-                    <a id="socialButton" href="mailto:jimmybui2021@yahoo.com"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">mail</i>Mail</a>
-                    <a id="socialButton" href="https://www.linkedin.com/in/jimmy-bui-mbti0n/">LinkedIn</a>
-                    <a id="socialButton" href="https://github.com/mbti0n"> GitHub</a>
+                    <p id="socialButtonLayout"><a id="socialButton" href="mailto:jimmybui2021@yahoo.com"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">mail</i>Mail</a></p>
+                    <p id="socialButtonLayout"><a id="socialButton" href="https://www.linkedin.com/in/jimmy-bui-mbti0n/">LinkedIn</a></p>
+                    <p id="socialButtonLayout"><a id="socialButton" href="https://github.com/mbti0n"> GitHub</a></p>
                 </div>
                 <p>UCF undergraduate in Information Technology with dedication and experience in web and backend development, proficient in Python, HTML, CSS, and PHP. Former widget designer on iOS and Android. A hobbyist photographer. Hablo español también, by the way.</p>
             </div>
@@ -46,7 +46,7 @@
         <section id="card">
             <h2>Education</h2>
             <div id="educationContainer">
-                <section id="valencia">
+                <section id="educationCard" style="background: #BE3427">
                     <img id="logo" src="img/valencia.jpeg" alt="Valencia College logo">
                     <div>
                         <h3>Valencia College</h3>
@@ -54,7 +54,7 @@
                         <p>Aug 2021 - Dec 2023</p>
                     </div>
                 </section>
-                <section id="ucf">
+                <section id="educationCard" style="background: #231F20">
                     <img id="logo" src="img/ucf.jpeg" alt="UCF logo">
                     <div>
                         <h3>University of Central Florida</h3>
@@ -159,7 +159,8 @@
 
     <hr>
     <footer>
-        <p>MBtion // Jimmy Bui • <span id="yearCurrent"><script>document.getElementById("yearCurrent").textContent = new Date().getFullYear()</script></span> | <span style="color: #b8b8b8">Based in Orlando, FL.</span></p>
+        <p>MBtion // Jimmy Bui • <span id="yearCurrent"><script>document.getElementById("yearCurrent").textContent = new Date().getFullYear()</script></span></p>
+        <p><span style="color: #b8b8b8">Based in Orlando, FL.</span></p>
     </footer>
 </body>
 </html>

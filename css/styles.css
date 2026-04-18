@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/* Default tag configurations */
 * {
     padding: 0px;
     margin: 0px;
@@ -15,7 +14,6 @@ body {
 nav {
     text-align: center;
     padding: 10px;
-    margin: 10px;
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
@@ -44,7 +42,7 @@ a:hover, a:active {
 h1, h2, h3, h4 {
     padding-top: 20px;
     letter-spacing: 1.6px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 p {
@@ -75,14 +73,24 @@ hr {
     margin: 15px;
 }
 
-#logo {
-    margin: 20px;
-    width: 120px;
-}
-
 img {
     display: block;
     width: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+header {
+    background-image: url("../img/cover1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    margin: auto;
+    height: 120px
 }
 
 #info {
@@ -94,18 +102,16 @@ img {
     display: flex;
     gap: 15px;
 }
-#valencia {
-    width: 100%;
-    background-color: #BE3427;
-    display: flex;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
 
-#ucf {
-    width: 100%;
+#educationCard {
     display: flex;
-    background-color: #231F20;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 5px;
+    background-color: #212121;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #textInfo {
@@ -156,7 +162,7 @@ img {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#projectCard:hover, #projectCardHome:hover, #experienceCard:hover, #valencia:hover, #ucf:hover {
+#projectCard:hover, #projectCardHome:hover, #experienceCard:hover, #educationCard:hover {
     scale: 1.02;
     transition: 0.25s;
 }
@@ -193,7 +199,6 @@ img {
     flex: 1 1 45%;
     box-sizing: border-box;
     padding: 0px 0px 25px;
-    /* margin-top: 25px; */
     background-color: #212121;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -202,21 +207,11 @@ img {
     padding: 25px;
 }
 
-footer {
-    text-align: center;
-}
-
-header {
-    background-image: url("../img/cover1.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/* Configurations by IDs */
 #headerContainer {
     display: flex;
     padding: 0px 15px;
     align-items: center;
-    background-color: #000000ae;
+    background-color: black;
     height: 50px;
 }
 
@@ -289,7 +284,6 @@ header {
     transition: 0.25s;
 }
 
-
 #profile {
     margin-right: 100%;
     margin-left: 0%;
@@ -297,33 +291,6 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-}
-
-#linkedin, #linkClick {
-    font-size: 16px;
-    padding-bottom: 0px;
-}
-
-#linkedin:active, #linkedin:visited, #linkedin:link {
-    border-bottom: 0px;
-    background-color: transparent;
-    transition: 0.25s;
-}
-
-#linkedin:hover {
-    background-color: blue;
-    color: white;
-}
-
-#linkClick:active, #linkClick:visited, #linkClick:link {
-    border-bottom: 0px;
-    background-color: transparent;
-    transition: 0.25s;
-}
-
-#linkClick:hover {
-    background-color: #cad3f5;
-    color: #24273a;
 }
 
 #project {
@@ -342,12 +309,6 @@ header {
 
 #name {
     font-size: 60px;
-}
-
-#mentionLink {
-    padding: 0px;
-    font-size: 17px; 
-    font-family: 'Roboto', sans-serif;
 }
 
 #projectCardContainer {
@@ -388,7 +349,6 @@ header {
 
 #mainPageContainer {
     width: 80%;
-    padding-top: 5px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -405,31 +365,119 @@ header {
     text-align: center;
 }
 
-/* Responsive UI */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 300px) {
+    #pageName {
+        text-align: center;
+    }
     #headerContainer {
         display: block;
         justify-content: left;
         margin-left: 0px;
         padding: 0px 0px;
-        margin-bottom: 45px;
-        background: #000000ae
+        background: black !important;
+    }
+
+    #navButtonSpecial {
+        display: block;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    #navButton {
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+
+    #contactLinks {
+        display: block !important;
+    }
+    
+    #info {
+        margin-top: 75px;
+    }
+    #textInfo {
+        padding-top: 0px;
+        width: 90%;
+    }
+
+    #navButtonSpecial {
+        margin: 15px 20% 0;
+    }
+    
+    nav {
+        padding-bottom: 15px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #contactLinks {
+        display: block !important;
+    }
+
+    .material-icons {
+        font-size: 8px !important;
+    }
+
+    #socialButtonLayout {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #headerContainer {
+        display: block;
+        justify-content: center;
+        margin-left: 0px;
+        padding: 0px 0px;
+        background: black
     }
 
     nav {
-        background: #000000ae
+        background: black;
+        padding-bottom: 15px !important;
     }
 
-    #navButtonSpecialNormal {
-        display: none
+    #project {
+        margin-top: 40px;
     }
 
-    #navButtonSpecialBig {
-        display: inline !important
+    #links {
+        padding: 0px;
+        background: black;
+    }
+
+    #pageName {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #textInfo {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    #socialButtonLayout {
+        margin-top: 20px;
+    }
+
+    #logo {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #headerContainer {
+        justify-content: left;
+        margin-left: 0px;
+        padding: 0px 0px;
     }
 
     #navText {
         display: none
+    }
+
+    #navButton {
+        padding-bottom: 5px;
     }
 
     .material-icons {
@@ -437,13 +485,50 @@ header {
         padding: 0px !important
     }
 
-    #pageName {
-        margin-top: 0px;
+    #textInfo {
+        width: 90%;
+    }
+
+    #card {
+        width: 85%;
+    }
+
+    #mainPageContainer {
+        width: 92.5%
+    }
+
+    #educationContainer {
+        display: block;
+    }
+
+    #educationCard {
+        display: block;
+        margin-top: 25px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    #logo {
+        margin: 0;
+        width: auto;
+    }
+
+    #projectContainer, #projectCardContainer{
+        display: block;
+    }
+
+    #projectCard, #projectCardHome {
+        display: block;
+        margin-top: 25px;
+    }
+
+    #experienceCard {
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 819px) {
-    #textInfo {
+@media screen and (min-width: 700px) and (max-width: 819px) {
+    #textInfo, #card {
         width: 90%;
     }
 
@@ -456,11 +541,7 @@ header {
     }
 
     #valencia, #ucf {
-        margin-bottom: 10px;
-    }
-
-    #card {
-        width: 90%;
+        margin-top: 20px;
     }
 
     #mainPageContainer {
@@ -469,10 +550,11 @@ header {
 
     #projectCard {
         display: flex;
+        padding: 7px 7px 15px;
         margin-bottom: 20px;
     }
 
-    #projectContainer, #projectCardContainer{
+    img, #projectContainer, #projectCardContainer {
         display: block;
     }
 
@@ -494,14 +576,9 @@ header {
         margin-top: 25px;
     }
 
-    img {
-        display: block;
-    }
-
     #logo {
         margin: 20px;
-        width: 100px;
-        height: 100px;
+        width: auto;
     }
 
     #projectLogo {
@@ -516,12 +593,12 @@ header {
         display: block;
     }
 
-    #textInfo {
+    #textInfo, #card {
         width: 90%;
     }
 
-    #mainPageContainer, #card {
-        width: 90%;
+    #mainPageContainer {
+        width: 93%;
     }
 
     #projectCard, #projectCardHome {
@@ -540,11 +617,7 @@ header {
         display: block;
     }
 
-    #textInfo {
-        width: 80%;
-    }
-
-    #mainPageContainer, #card {
+    #card, #textInfo, #cardProject {
         width: 80%;
     }
 
@@ -563,11 +636,7 @@ header {
         display: block;
     }
 
-    #textInfo {
-        width: 75%;
-    }
-
-    #mainPageContainer, #card {
+    #mainPageContainer, #card, #cardProject, #textInfo {
         width: 75%;
     }
 
