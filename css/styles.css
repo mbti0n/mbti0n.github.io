@@ -93,8 +93,10 @@ li {
 }
 
 #logo {
-    margin: auto;
-    height: 120px
+    margin-right: 5px;
+    width: 120px;
+    height: 120px;
+    object-fit: fill;
 }
 
 #info {
@@ -136,6 +138,7 @@ li {
     margin-right: auto;
     background-color: #424242;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: 0.3s ease-out 0s 1 running slideDown;
 }
 
 #cardProject {
@@ -145,6 +148,7 @@ li {
     margin-bottom: 10px;
     background-color: #424242;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: 0.3s ease-out 0s 1 running slideDown;
 }
 
 #projectCard {
@@ -155,6 +159,8 @@ li {
     background-color: #212121;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    animation: 0.3s ease-out 0s 1 running slideDown;
+
 }
 
 #flair {
@@ -313,7 +319,8 @@ li {
 }
 
 #projectCardContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -323,7 +330,8 @@ li {
 }
 
 #projectContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -523,7 +531,7 @@ li {
 
     #projectCard, #projectCardHome {
         display: block;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     #experienceContainer {
@@ -572,7 +580,7 @@ li {
 
     #projectCardHome {
         display: flex;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     #experienceContainer {
@@ -614,9 +622,8 @@ li {
         box-sizing: border-box;
     }
 
-    #projectContainer {
-        display: flex;
-        flex-wrap: wrap;
+    #projectCardContainer, #projectContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -629,13 +636,13 @@ li {
         width: 80%;
     }
 
-    #projectCard, #projectCardHome {
-        width: 44%
-    }
-
     #projectContainer {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    #projectCardContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -644,16 +651,22 @@ li {
         display: block;
     }
 
-    #mainPageContainer, #card, #cardProject, #textInfo {
+    #mainPageContainer, #cardProject, #textInfo {
+        width: 85%;
+    }
+
+    #card {
         width: 75%;
     }
+}
 
-    #projectCard, #projectCardHome {
-        width: 44%
-    }
+/* Animations */
+@keyframes show {
+    0% { background-color: #000000; }
+    100% { background-color: #141414; }
+}
 
-    #projectContainer {
-        display: flex;
-        flex-wrap: wrap;
-    }
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(2%); }
+    100% { opacity: 1; transform: translateY(0); }
 }
