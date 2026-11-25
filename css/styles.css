@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
+    font-family: 'Roboto', sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -19,29 +20,29 @@ nav {
     text-transform: uppercase;
 }
 
-p, li {
-    font-family: 'Roboto', sans-serif;
-}
-
-a {
+a, .normalLink {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 1.5rem;
     color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
-a:visited, a:link {
+.normalLink {
+    padding: 0px;
+    font-size: 0.9rem;
+}
+
+a:visited, a:link, .normalLink:visited, .normalLink:link {
     text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, .normalLink:hover, .normalLink:active {
     color: white;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     padding-top: 20px;
-    letter-spacing: 1.6px;
+    letter-spacing: 0.6px;
     margin-bottom: 15px;
 }
 
@@ -53,20 +54,17 @@ p {
 
 li {
     line-height: 1.5;
-    margin-left: 40px;
-}
-
-h1, h2 {
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 h2 {
+    text-align: left;
     padding: 0px 2.5px;
 }
 
-h3 {
-    font-family: 'Roboto', sans-serif;
+.albumInfo h3 {
+    letter-spacing: 0.2px;
 }
 
 hr {
@@ -83,55 +81,12 @@ footer {
 }
 
 header {
-    background-image: url("../img/cover1.jpeg");
+    background-image: url("../img/cover1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-li {
-    margin-left: 15px;
-}
-
-#logo {
-    margin-right: 5px;
-    width: 120px;
-    height: 120px;
-    object-fit: fill;
-}
-
-#info {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-}
-
-#educationContainer {
-    display: flex;
-    gap: 15px;
-}
-
-#educationCard {
-    display: flex;
-    flex: 1 1 30%;
-    box-sizing: border-box;
-    padding: 25px;
-    margin-bottom: 5px;
-    background-color: #212121;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-#textInfo {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#desc {
-    font-size: 0.9rem;
-}
-
-#card {
-    width: 65%;
+.homeCard, .musicCard {
     padding: 25px 20px 25px;
     margin-bottom: 10px;
     margin-left: auto;
@@ -139,6 +94,17 @@ li {
     background-color: #424242;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     animation: 0.3s ease-out 0s 1 running slideDown;
+}
+
+.homeCard {
+    height: 150px;
+    width: 50%;
+}
+
+.musicCard {
+    background-color: transparent;
+    box-shadow: 0 2px 10px transparent;
+    width: 80%
 }
 
 #cardProject {
@@ -152,7 +118,6 @@ li {
 }
 
 #projectCard {
-    flex: 1 1 30%;
     box-sizing: border-box;
     padding: 25px;
     margin-bottom: 5px;
@@ -160,10 +125,9 @@ li {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     animation: 0.3s ease-out 0s 1 running slideDown;
-
 }
 
-#flair {
+.flair {
     background: #ffffff;
     font-size: 0.8rem;
     padding: 6px 10px;
@@ -172,57 +136,57 @@ li {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#projectCard:hover, #projectCardHome:hover, #experienceCard:hover, #educationCard:hover {
+#projectCard:hover, .homeCard:hover {
     scale: 1.02;
     transition: 0.25s;
 }
 
-#rect1 {
-    background: black;
+.albumCover {
     width: 100%;
-    height: 120px;
+}
+
+.albumCard {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #343434;
+}
+
+.experienceCard {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-direction: column;
-}
-
-#rectCover {
-    scale: 1.6;
-    margin: auto
-}
-
-#rect2 {
-    background-image: url('../img/widgy.jpeg');
-    width: 100%;
-    height: 120px;
-}
-
-#projectCardHome {
-    padding: 25px;
-    flex: 1 1 30%;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
     box-sizing: border-box;
-    background-color: #424242;
+    padding: 10px 25px 25px 25px;
+    background-color: #343434;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    animation: 0.4s ease-out 0s 1 running slideDown;
 }
 
-#experienceCard {
-    flex: 1 1 45%;
-    box-sizing: border-box;
-    padding: 0px 0px 25px;
-    background-color: #212121;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+.experienceCard img {
+    padding-top: 15px;
+    align-self: flex-start;
 }
 
 #experienceInfo {
-    padding: 25px;
+    padding-top: 25px;
 }
 
-#headerContainer {
+#headerContainer, #headerContainerSmall, #funContainer, #funContainerSmall {
     display: flex;
     padding: 0px 15px;
     align-items: center;
     background-color: black;
-    height: 40px;
+}
+
+#headerContainerSmall, #funContainerSmall {
+    display: none;
+}
+
+#headerContainerSmall .pageName, #funContainerSmall .pageName {
+    margin-bottom: 15px;
 }
 
 #links {
@@ -232,48 +196,39 @@ li {
 
 #contactLinks {
     display: inline-flex;
+    margin-top: 10px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#pageName {
-    margin-top: 15px;
+.pageName {
+    margin-bottom: 0px;
     letter-spacing: 0.8px;
 }
 
-#pageNameButton {
-    font-family: 'Roboto', sans-serif;
+.pageNameButton {
     font-size: 1.2rem;
 }
 
-#navButton {
-    padding-bottom: 8px;
+.albumInfo {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.navButton {
+    padding-bottom: 10px;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.8px;
 }
 
-#navButton:hover, #navButton:active {
+.navButton:hover, .navButton:active {
     border-bottom: 3px solid;
 }
 
-#navButtonSpecial {
-    font-size: 0.8rem;
-    margin-left: 20px;
-    padding: 8px 12px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    background: #2A3AEF;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-#navButtonSpecial:hover, #navButtonSpecial:active {
-    background: #5862d5;
-    transition: 0.25s;
-}
-
-#socialButton {
+.socialButton {
     text-transform: uppercase;
     font-size: 0.8rem;
     margin-right: 15px;
@@ -285,14 +240,14 @@ li {
     cursor: pointer;
 }
 
-#socialButton:hover, #socialButton:active {
+.socialButton:hover, .socialButton:active {
     background: #b2b5c1;
     transition: 0.25s;
 }
 
 #profile {
-    margin-right: 100%;
-    margin-left: 0%;
+    margin-right: auto;
+    margin-left: auto;
     padding: 25px 0px;
     width: 150px;
     height: 150px;
@@ -307,15 +262,18 @@ li {
 }
 
 #info {
-    display: flex;
-    gap: 5px;
-    text-align: left;
+    text-align: center;
     background-color: #0000005e;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #name {
+    text-align: center;
     font-size: 3rem;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 #projectCardContainer {
@@ -325,31 +283,23 @@ li {
     margin-left: auto;
     margin-right: auto;
     gap: 15px;
-    flex-wrap: wrap;
     justify-content: left;
 }
 
-#projectContainer {
+.albumList {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    flex-wrap: wrap;
-    flex-basis: auto;
     justify-content: center;
 }
 
-#experienceContainer {
-    display: flex;
-    gap: 15px;
+.experienceContainer {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: center;
 }
 
 #experienceHeading {
@@ -362,58 +312,14 @@ li {
     margin-right: auto;
 }
 
-#skills {
-    text-align: center;
-}
-
-#skillsContainer {
-    text-align: center;
-}
-
 @media screen and (max-width: 300px) {
     html {
         font-size: 80%;
     }
-    #pageName {
-        text-align: center;
-    }
-    #headerContainer {
-        display: block;
-        justify-content: left;
-        margin-left: 0px;
-        padding: 0px 0px;
-        background: black !important;
-    }
 
-    #navButtonSpecial {
-        display: block;
-        margin-left: 0px;
-        margin-top: 15px;
-    }
-
-    #navButton {
+    .navButton {
         padding-left: 7px !important;
         padding-right: 7px !important;
-    }
-
-    #contactLinks {
-        display: block !important;
-    }
-    
-    #info {
-        margin-top: 75px;
-    }
-    #textInfo {
-        padding-top: 0px;
-        width: 90%;
-    }
-
-    #navButtonSpecial {
-        margin: 15px 20% 0;
-    }
-    
-    nav {
-        padding-bottom: 15px !important;
     }
 }
 
@@ -421,23 +327,17 @@ li {
     #contactLinks {
         display: block !important;
     }
-
-    .material-icons {
-        font-size: 0.5rem !important;
-    }
-
-    #socialButtonLayout {
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width: 500px) {
-    #headerContainer {
+    #headerContainer, #funContainer {
+        display: none;
+    }
+
+    #headerContainerSmall, #funContainerSmall {
         display: block;
-        justify-content: center;
-        margin-left: 0px;
         padding: 0px 0px;
-        background: black
+        margin: 0px;
     }
 
     nav {
@@ -445,36 +345,18 @@ li {
         padding-bottom: 15px !important;
     }
 
-    #project {
-        margin-top: 40px;
-    }
-
     #links {
         padding: 0px;
         background: black;
     }
 
-    #pageName {
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    #textInfo {
-        width: 90%;
-        margin-top: 50px;
-    }
-
-    #socialButtonLayout {
+    .socialButtonLayout {
         margin-top: 20px;
-    }
-
-    #logo {
-        margin-left: 0px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    #headerContainer {
+    #headerContainer, #funContainer {
         justify-content: left;
         margin-left: 0px;
         padding: 0px 0px;
@@ -484,25 +366,21 @@ li {
         display: none
     }
 
-    #navButton {
+    .navButton {
         padding-bottom: 5px;
     }
 
-    .material-icons {
+    a .material-icons {
         font-size: 1rem !important;
         padding: 0px !important
     }
 
-    #socialButton .material-icons {
+    .socialButton .material-icons {
         font-size: 10px !important;
         padding-right: 5px !important;
     }
 
-    #textInfo {
-        width: 90%;
-    }
-
-    #card {
+    .homeCard {
         width: 85%;
     }
 
@@ -510,54 +388,31 @@ li {
         width: 92.5%
     }
 
-    #educationContainer {
+    #projectCardContainer {
         display: block;
     }
 
-    #educationCard {
-        display: block;
-        margin-right: 0px;
+    #projectCard {
         margin-top: 20px;
     }
 
-    #logo {
-        margin: 0;
-        width: auto;
+    .albumList {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    #projectContainer, #projectCardContainer{
+    .experienceCard {
         display: block;
+        width: 100%;
     }
 
-    #projectCard, #projectCardHome {
-        display: block;
-        margin-top: 20px;
-    }
-
-    #experienceContainer {
-        display: block;
-    }
-
-    #experienceCard {
-        margin-top: 20px;
+    .musicCard {
+        width: 90%;
     }
 }
 
 @media screen and (min-width: 700px) and (max-width: 819px) {
-    #textInfo, #card {
+    .homeCard, .experienceCard, .musicCard {
         width: 90%;
-    }
-
-    #linkText, #pageName {
-        text-align: center;
-    }
-
-    #educationContainer {
-        display: block;
-    }
-
-    #educationCard {
-        margin-top: 20px;
     }
 
     #mainPageContainer {
@@ -570,7 +425,7 @@ li {
         margin-bottom: 20px;
     }
 
-    img, #projectContainer, #projectCardContainer {
+    #projectCardContainer {
         display: block;
     }
 
@@ -578,38 +433,19 @@ li {
         padding: 30px 20px 10px;
     }
 
-    #projectCardHome {
-        display: flex;
-        margin-top: 20px;
-    }
-
-    #experienceContainer {
-        display: block;
-        padding-bottom: 10px;
-    }
-
-    #experienceCard {
-        margin-top: 25px;
-    }
-
-    #logo {
-        margin: 20px;
-        width: auto;
-    }
-
-    #projectLogo {
+    .projectLogo {
         margin: 20px;
         width: 70px;
         height: 70px;
     }
+
+    .albumList {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 820px) and (max-width: 1100px) {
-    img {
-        display: block;
-    }
-
-    #textInfo, #card {
+    .homeCard, .experienceCard {
         width: 90%;
     }
 
@@ -617,28 +453,18 @@ li {
         width: 93%;
     }
 
-    #projectCard, #projectCardHome {
-        flex: 1 1 45%;
-        box-sizing: border-box;
+    #projectCardContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    #projectCardContainer, #projectContainer {
-        grid-template-columns: repeat(2, 1fr);
+    .albumList {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
-    img {
-        display: block;
-    }
-
-    #card, #textInfo, #cardProject {
+    .homeCard, #cardProject, .experienceCard {
         width: 80%;
-    }
-
-    #projectContainer {
-        display: flex;
-        flex-wrap: wrap;
     }
 
     #projectCardContainer {
@@ -647,23 +473,13 @@ li {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1700px) {
-    img {
-        display: block;
-    }
-
-    #mainPageContainer, #cardProject, #textInfo {
+    #mainPageContainer, #cardProject, .experienceCard {
         width: 85%;
     }
 
-    #card {
+    .homeCard {
         width: 75%;
     }
-}
-
-/* Animations */
-@keyframes show {
-    0% { background-color: #000000; }
-    100% { background-color: #141414; }
 }
 
 @keyframes slideDown {

@@ -8,158 +8,69 @@
     <meta property="og:url" content="https://mbti0n.github.io/">
     <meta property="og:type" content="website">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="css/styles.css">
 
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Home | MBtion // Jimmy Bui</title>
 </head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 <body>
     <header>
         <div id="headerContainer">
-            <p id="pageName"><a id="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
+            <p class="pageName"><a class="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
             <nav id="links">
-                <a id="navButton" style="border-bottom: 3px solid" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a> 
-                <a id="navButton" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
-                <a id="navButtonSpecial" href="https://mbti0n.github.io/nichesite">NicheSite</a>
+                <a class="navButton" style="border-bottom: 3px solid" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a>
+                <a class="navButton" href="experiences.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">work</i><span id="navText">Experiences</span></a>
+                <a class="navButton" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
             </nav>
         </div>
+
+        <div id="headerContainerSmall">
+            <nav id="links">
+                <p class="pageName" style="text-transform: capitalize;"><a class="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
+                <a class="navButton" style="border-bottom: 3px solid" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a>
+                <a class="navButton" href="experiences.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">work</i><span id="navText">Experiences</span></a>
+                <a class="navButton" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
+            </nav>
+        </div>
+
         <section id="info">
-            <div id="textInfo">
-                <img id="profile" src="img/profile.jpeg" alt="Personal profile picture">
-                <h2 id="name">Jimmy Bui</h2>
-                <div id="contactLinks">
-                    <p id="socialButtonLayout"><a id="socialButton" href="mailto:jimmybui2021@yahoo.com"><i class="material-icons" style="padding-right: 10px; font-size: 10px;">mail</i>Mail</a></p>
-                    <p id="socialButtonLayout"><a id="socialButton" href="https://www.linkedin.com/in/jimmy-bui-mbti0n/">LinkedIn</a></p>
-                    <p id="socialButtonLayout"><a id="socialButton" href="https://github.com/mbti0n"> GitHub</a></p>
-                </div>
-                <p>UCF undergraduate in Information Technology with dedication and experience in web and backend development, proficient in Python, HTML, CSS, and PHP. Former widget designer on iOS and Android. A hobbyist photographer. Hablo español también, by the way.</p>
+            <img id="profile" src="img/profile.jpeg" alt="Personal profile picture">
+            <h2 id="name">Jimmy Bui</h2>
+            <p>UCF IT Undergrad • Software &amp; Web Dev</p>
+            <div id="contactLinks">
+                <p class="socialButtonLayout"><a class="socialButton" href="mailto:jimmybui2021@yahoo.com"><i class="material-icons" style="padding-right: 10px; font-size: 10px;">mail</i>Mail</a></p>
+                <p class="socialButtonLayout"><a class="socialButton" href="https://www.linkedin.com/in/jimmy-bui-mbti0n/">LinkedIn</a></p>
+                <p class="socialButtonLayout"><a class="socialButton" href="https://github.com/mbti0n"> GitHub</a></p>
+                <p class="socialButtonLayout"><a class="socialButton" href="https://mbti0n.github.io/nichesite"> <i class="material-icons" style="padding-right: 10px; font-size: 10px;">language</i>NicheSite</a></p>
             </div>
         </section>
     </header>
     <article>
-        <h1 style="display: none">Jimmy Bui</h1>
-
-        <section id="card">
-            <h2>Education</h2>
-            <div id="educationContainer">
-                <section id="educationCard" style="background: #BE3427">
-                    <img id="logo" src="img/valencia.jpeg" alt="Valencia College logo">
-                    <div>
-                        <h3>Valencia College</h3>
-                        <p>AA General Studies</p>
-                        <p>Aug 2021 - Dec 2023</p>
-                    </div>
-                </section>
-                <section id="educationCard" style="background: #231F20">
-                    <img id="logo" src="img/ucf.jpeg" alt="UCF logo">
-                    <div>
-                        <h3>University of Central Florida</h3>
-                        <p>Information Technology</p>
-                        <p>Expected graduation in Fall 2026</p>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <section id="card">
-            <h2>Projects</h2>
-            <p id="desc">My top 6 (not 7) projects that I am the most proud of.</p>
-            <div id="projectContainer">
-                <section onclick="location.href='https://mbti0n.github.io/nichesite';" id="projectCardHome" style="background: #2A3AEF">
-                    <img id="projectLogo" style="scale: 1.4" src="img/nichesite.png" alt="NicheSite logo">
-                    <div>
-                        <h3>NicheSite</h3>
-                        <p>A niche website for niche needs.</p>
-                        <p><span id="flair">Web</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/mbti0n/wordle-clone-python';" id="projectCardHome" style="background: #43763c">
-                    <img id="projectLogo" style="scale: 1.6" src="img/wordle-clone-python.png" alt="wordle-clone-python logo">
-                    <div>
-                        <h3>wordle-clone-python</h3>
-                        <p>A basic Wordle clone, written in Python</p>
-                        <p><span id="flair">CLI</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/mbti0n/Roblox-Shortcut-Creator';" id="projectCardHome" style="background: #1c45a4">
-                    <img id="projectLogo" style="scale: 1.2" src="img/roblox-shortcut-creator.png" alt="Roblox Shortcut Creator logo">
-                    <div>
-                        <h3>Roblox Shortcut Creator</h3>
-                        <p>Adding Roblox game shortcuts to Windows desktop</p>
-                        <p><span id="flair">Productivity</span> <span id="flair">API</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/mbti0n/Custom-CSS-Collection/#ChatGPT/';" id="projectCardHome" style="background: #343541">
-                    <img id="projectLogo" style="scale: 1.6" src="img/classicgpt.png" alt="ClassicGPT logo">
-                    <div>
-                        <h3>ClassicGPT</a></h3>
-                        <p>Stripped-down ChatGPT to match the functionality of the old UI from 2022-2023</p>
-                        <p><span id="flair">Web</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/tarokeitaro/ndcord';" id="projectCardHome" style="background: #0966bd">
-                    <img id="projectLogo" style="scale: 1.5" src="img/ndcord.png" alt="ndcord logo">
-                    <div>
-                        <h3>ndcord</a></h3>
-                        <p><em>Pull request</em><p>
-                        <p>Simple Discord Rich Presence for Navidrome</p>
-                        <p><span id="flair">API</span> <span id="flair">Discord</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/mbti0n/Project-Aguita';" id="projectCardHome" style="background: #212121">
-                    <img id="projectLogo" src="img/aguita.png" alt="Project Aguita logo">
-                    <div>
-                        <h3>Project-Aguita</h3>
-                        <p>A quick Python script to understand how automatic bottle filling stations work.</p>
-                        <p><span id="flair">CLI</span></p>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <section id="card">
+        <section class="homeCard" onclick="location.href='/experiences.html'" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://unsplash.com/photos/zoP_v6U80EU/download?force=true'); background-position: center; background-size: cover;">
+            <p>01</p>
             <h2>Experiences</h2>
-            <div id="experienceContainer">
-                <section id="experienceCard">
-                    <div id="rect1">
-                        <img id="rectCover" src="https://i0.wp.com/wisecommerce.io/wp-content/uploads/2025/04/wisecommerce_ci_160_white.png?w=200&ssl=1">
-                    </div>
-                    <div id="experienceInfo">
-                        <h3 id="experienceHeading">AI Training</h3>
-                        <p><strong>Wise Commerce, based in Seoul, South Korea, May 2024 - July 2024</strong></p>
-                        <ul>
-                            <li>Fine-tuning AI features for Wise Commerce's eCommerce platform.</li>
-                            <li>Got familiar with the process of integrating AI and understanding the cost of AI data training and usage into an organization's product using OpenAI API.</li>
-                        </ul>
-                    </div>
-                </section>
-                <section id="experienceCard">
-                    <div id="rect2"></div>
-                    <div id="experienceInfo">
-                        <h3 id="experienceHeading">Widget Designer</h3>
-                        <p style="padding-bottom: 15px">Designing widgets for iOS and Android.</p>
-                        <a id="socialButton" href="https://mbtion.notion.site/MBtion-4a6f2cea8ede4da0a8d5b36558eece03?pvs=73">Explore</a>
-                    </div>
-                </section>
-            </div>
+            <p>My previous jobs and experiences.</p>
         </section>
 
-        <section id="card">
-            <h2>Skills</h2>
-            <p id="desc">The bigger the text is, the more proficient I am with these skills.</p>
-            <p id="skillsContainer"><span style="font-size: 60px">Python</span>  <span style="font-size: 40px">HTML</span>  <span style="font-size: 40px">CSS</span>  <span style="font-size: 40px">PHP</span></p>
-            <p id="skillsContainer"><span style="font-size: 20px">C</span>  <span style="font-size: 20px">Java</span> <span style="font-size: 20px">JavaScript <span style="font-size: 16px">Digital design</span>  <span style="font-size: 16px">R</span>  <span style="font-size: 16px">Lua</span> <span style="font-size: 16px">LaTeX</span>  <span style="font-size: 16px">bash</span></p>
+        <section class="homeCard" onclick="location.href='/projects.html'" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://unsplash.com/photos/4hbJ-eymZ1o/download?force=true&w=1920');">
+            <p>02</p>
+            <h2>Projects</h2>
+            <p>All the projects I have done.</p>
+        </section>
+
+        <section class="homeCard" onclick="location.href='/music.html'" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://unsplash.com/photos/wvbOWcIDuYg/download?force=true'); background-position: center; background-size: cover;">
+            <p>03</p>
+            <h2>Learn more about me</h2>
+            <p>Learn about the music I got and the games I play.</p>
         </section>
     </article>
 
     <hr>
     <footer>
         <p>MBtion // Jimmy Bui • <span id="yearCurrent"><script>document.getElementById("yearCurrent").textContent = new Date().getFullYear()</script></span></p>
-        <p><span style="color: #b8b8b8">Based in Orlando, FL.</span></p>
     </footer>
 </body>
 </html>

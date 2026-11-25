@@ -7,105 +7,122 @@
     <meta property="og:description" content="All the projects I have done.">
     <meta property="og:url" content="https://mbti0n.github.io/projects.html">
     <meta property="og:type" content="website">
+    <meta name="theme-color" content="#000000">
 
-    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <title>Projects | MBtion // Jimmy Bui</title>
 </head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <body>
     <header style="background-image: url('https://unsplash.com/photos/4hbJ-eymZ1o/download?force=true&w=1920')">
         <div id="headerContainer">
-            <p id="pageName"><a id="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
+            <p class="pageName"><a class="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
             <nav id="links">
-                <a id="navButton" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a> 
-                <a id="navButton" style="border-bottom: 3px solid" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
-                <a id="navButtonSpecial" href="https://mbti0n.github.io/nichesite">NicheSite</a>
+                <a class="navButton" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a>
+                <a class="navButton" href="experiences.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">work</i><span id="navText">Experiences</span></a>
+                <a class="navButton" style="border-bottom: 3px solid" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
+            </nav>
+        </div>
+
+        <div id="headerContainerSmall">
+            <nav id="links">
+                <p class="pageName" style="text-transform: capitalize;"><a class="pageNameButton" href="index.html"><strong>Jimmy Bui</strong></a></p>
+                <a class="navButton" href="index.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">home</i><span id="navText">Home</span></a>
+                <a class="navButton" href="experiences.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">work</i><span id="navText">Experiences</span></a>
+                <a class="navButton" style="border-bottom: 3px solid" href="projects.html"><i class="material-icons" style="padding-right: 10px; font-size: 13px;">view_agenda</i><span id="navText">Projects</span></a>
             </nav>
         </div>
         <section id="info" style="display: block;">
             <h1 id="project" style="padding: 70px 0px 15px;">Projects</h1>
-            <p style="text-align: center; padding: 0px 0px 70px;">All the projects I have done.</p>
+            <p style="text-align: center; padding: 0px 0px 40px;">All the projects I have done.</p>
         </section>
     </header>
     <article>
         <section id="mainPageContainer">
             <div id="cardProject">
-            <h2>Featured</h2> 
+            <h2>Featured</h2>
             <div id="projectCardContainer">
+                <section onclick="location.href='https://devpost.com/software/vivedashtop';" id="projectCard" style="background: black">
+                    <img class="projectLogo" style="scale: 1.0" src="img/vivedashtop.png" alt="ViveDashTop logo">
+                    <div>
+                        <h3>ViveDashTop</h3>
+                        <p>Old slow laptop, new modern dashboard, build for macOS/Linux.</p>
+                        <p><span class="flair">Hackathon</span> <span class="flair">CLI</span> <span class="flair">Hardware</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://devpost.com/software/repo-radio';" id="projectCard" style="background: black">
+                    <img class="projectLogo" style="scale: 1.0" src="img/repo-radio.jpeg" alt="ViveDashTop logo">
+                    <div>
+                        <h3>Repo Radio</h3>
+                        <p>Musicify your GitHub repository.</p>
+                        <p><span class="flair">Hackathon</span> <span class="flair">LLM</span> <span class="flair">API</span></p>
+                    </div>
+                </section>
+                <section onclick="location.href='https://github.com/mbti0n/GIF-Meme-Maker';" id="projectCard" style="background: #06236d">
+                    <img class="projectLogo" style="scale: 1.0" src="img/gif-meme-maker.png" alt="GIF-Meme-Maker logo">
+                    <div>
+                        <h3>GIF-Meme-Maker</h3>
+                        <p>A simple Discord-style text-and-image fade in GIF generator.</p>
+                        <p><span class="flair">CLI</span> <span class="flair">Video-typed generation</span></p>
+                    </div>
+                </section>
                 <section onclick="location.href='https://mbti0n.github.io/nichesite';" id="projectCard" style="background: #2A3AEF">
-                    <img id="projectLogo" style="scale: 1.4" src="img/nichesite.png" alt="NicheSite logo">
+                    <img class="projectLogo" style="scale: 1.4" src="img/nichesite.png" alt="NicheSite logo">
                     <div>
                         <h3>NicheSite</h3>
                         <p>A niche website for niche needs.</p>
-                        <p><span id="flair">Web</span></p>
+                        <p><span class="flair">Web</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/wordle-clone-python';" id="projectCard" style="background: #43763c">
-                    <img id="projectLogo" style="scale: 1.6" src="img/wordle-clone-python.png" alt="wordle-clone-python logo">
+                    <img class="projectLogo" style="scale: 1.6" src="img/wordle-clone-python.png" alt="wordle-clone-python logo">
                     <div>
                         <h3>wordle-clone-python</h3>
                         <p>A basic Wordle clone, written in Python</p>
-                        <p><span id="flair">CLI</span></p>
+                        <p><span class="flair">CLI</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/Roblox-Shortcut-Creator';" id="projectCard" style="background: #1c45a4">
-                    <img id="projectLogo" style="scale: 1.2" src="img/roblox-shortcut-creator.png" alt="Roblox Shortcut Creator logo">
+                    <img class="projectLogo" style="scale: 1.2" src="img/roblox-shortcut-creator.png" alt="Roblox Shortcut Creator logo">
                     <div>
                         <h3>Roblox Shortcut Creator</h3>
                         <p>Adding Roblox game shortcuts to Windows desktop</p>
-                        <p><span id="flair">Productivity</span> <span id="flair">API</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/mbti0n/Custom-CSS-Collection/#ChatGPT/';" id="projectCard" style="background: #343541">
-                    <img id="projectLogo" style="scale: 1.6" src="img/classicgpt.png" alt="ClassicGPT logo">
-                    <div>
-                        <h3>ClassicGPT</h3>
-                        <p>Stripped-down ChatGPT to match the functionality of the old UI from 2022-2023</p>
-                        <p><span id="flair">Web</span></p>
+                        <p><span class="flair">Productivity</span> <span class="flair">API</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/tarokeitaro/ndcord';" id="projectCard" style="background: #0966bd">
-                    <img id="projectLogo" style="scale: 1.5" src="img/ndcord.png" alt="ndcord logo">
+                    <img class="projectLogo" style="scale: 1.5" src="img/ndcord.png" alt="ndcord logo">
                     <div>
                         <h3>ndcord</h3>
                         <p><em>Pull request</em><p>
                         <p>Simple Discord Rich Presence for Navidrome</p>
-                        <p><span id="flair">API</span> <span id="flair">Discord</span></p>
+                        <p><span class="flair">API</span> <span class="flair">Discord</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/Project-Amazonita';" id="projectCard">
-                    <img id="projectLogo" src="img/amazonita.png" alt="Project Amazonita logo">
+                    <img class="projectLogo" src="img/amazonita.png" alt="Project Amazonita logo">
                     <div>
                         <h3>Project-Amazonita</h3>
                         <p>A quick Python script to understand how Amazon deals with orders.</p>
-                        <p><span id="flair">CLI</span></p>
+                        <p><span class="flair">CLI</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/Project-Aguita';" id="projectCard">
-                    <img id="projectLogo" src="img/aguita.png" alt="Project Aguita logo">
+                    <img class="projectLogo" src="img/aguita.png" alt="Project Aguita logo">
                     <div>
                         <h3>Project-Aguita</h3>
                         <p>A quick Python script to understand how automatic bottle filling stations work.</p>
-                        <p><span id="flair">CLI</span></p>
+                        <p><span class="flair">CLI</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://mbti0n.netlify.app';" id="projectCard" style="background: #1D1F28">
-                    <img id="projectLogo" style="scale: 1.5" src="img/personallinks.png" alt="personalLinks logo">
+                    <img class="projectLogo" style="scale: 1.5" src="img/personallinks.png" alt="personalLinks logo">
                     <div>
                         <h3>personalLinks</h3>
                         <p>A Linktree-inspired personal link website.</p>
-                        <p><span id="flair">Web</span></p>
-                    </div>
-                </section>
-                <section onclick="location.href='https://github.com/mbti0n/Nokia-E7-SurvivalKit';" id="projectCard" style="background: black">
-                    <img id="projectLogo" style="scale: 1.6" src="img/nokia-e7.png" alt="Nokia E7 Survival Kit logo">
-                    <div>
-                        <h3>Nokia E7 Survival Kit</h3>
-                        <p>A guide to use a Nokia E7 in modern days.</p>
-                        <p><span id="flair">Guide</span></p>
+                        <p><span class="flair">Web</span></p>
                     </div>
                 </section>
             </div>
@@ -114,27 +131,27 @@
             <h2>Concepts / Working in Progress</h2>
             <div id="projectCardContainer">
                 <section onclick="location.href='https://github.com/mbti0n/premodoro';" id="projectCard" style="background: #a22c0c">
-                    <img id="projectLogo" src="img/premodoro.png" alt="Premodoro logo">
+                    <img class="projectLogo" src="img/premodoro.png" alt="Premodoro logo">
                     <div>
                         <h3>Premodoro</h3>
                         <p>A simple Pomodoro Discord Rich Presence</p>
-                        <p><span id="flair">Discord</span> <span id="flair">CLI</span></p>
+                        <p><span class="flair">Discord</span> <span class="flair">CLI</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='#';" id="projectCard">
-                    <img id="projectLogo" src="img/inprogress.png" alt="In progress">
+                    <img class="projectLogo" src="img/inprogress.png" alt="In progress">
                     <div>
                         <h3>Livescore-Presence</h3>
                         <p>A simple Discord presence to show sports live score</p>
-                        <p><span id="flair">CLI</span> <span id="flair">Discord</span></p>
+                        <p><span class="flair">CLI</span> <span class="flair">Discord</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='#';" id="projectCard">
-                    <img id="projectLogo" src="img/inprogress.png" alt="In progress">
+                    <img class="projectLogo" src="img/inprogress.png" alt="In progress">
                     <div>
                         <h3>prettyOllamaChat</h3>
                         <p>A nicer yet simpler TUI for Ollama, written in Python</p>
-                        <p><span id="flair">CLI</span></p>
+                        <p><span class="flair">CLI</span></p>
                     </div>
                 </section>
             </div>
@@ -142,44 +159,52 @@
             <div id="cardProject">
             <h2>Archived</h2>
             <div id="projectCardContainer">
+                <section onclick="location.href='https://github.com/mbti0n/Custom-CSS-Collection/#ChatGPT/';" id="projectCard" style="background: #343541">
+                    <img class="projectLogo" style="scale: 1.6" src="img/classicgpt.png" alt="ClassicGPT logo">
+                    <div>
+                        <h3>ClassicGPT</h3>
+                        <p>Stripped-down ChatGPT to match the functionality of the old UI from 2022-2023</p>
+                        <p><span class="flair">Web</span></p>
+                    </div>
+                </section>
                 <section onclick="location.href='https://github.com/mbti0n/quikmafs';" id="projectCard" style="background: #8EDDBE">
-                    <img id="projectLogo" src="img/quikmafs.png" alt="QuikMafs logo">
+                    <img class="projectLogo" src="img/quikmafs.png" alt="QuikMafs logo">
                     <div>
                         <h3 style="color: #242424">QuikMafs</h3>
                         <p style="color: #242424">A Discord bot that does calculations.</p>
-                        <p><span id="flair">Discord</span></p>
+                        <p><span class="flair">Discord</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://mbtion.notion.site/WidgyTube-51bcdad70a9d4338adfaf82923947d62';" id="projectCard" style="background: #932927">
-                    <img id="projectLogo" src="img/widgytube.png" alt="WidgyTube thumbnail">
+                    <img class="projectLogo" src="img/widgytube.png" alt="WidgyTube thumbnail">
                     <div>
                         <h3>WidgyTube</h3>
                         <p>If YouTube made widgets on iOS.</p>
-                        <p><span id="flair">API</span></p>
+                        <p><span class="flair">API</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/International';" id="projectCard" style="background: #00989E">
-                    <img id="projectLogo" src="img/international.png" alt="International thumbnail">
+                    <img class="projectLogo" src="img/international.png" alt="International thumbnail">
                     <div>
                         <h3>International</h3>
                         <p>World flag watch faces for Apple Watch, using Stripes.</p>
-                        <p><span id="flair">Customization</span></p>
+                        <p><span class="flair">Customization</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/UCFGarage';" id="projectCard" style="background: black">
-                    <img id="projectLogo" style="scale: 1.5" src="img/ucfGarage.png" alt="UCFGarage logo">
+                    <img class="projectLogo" style="scale: 1.5" src="img/ucfGarage.png" alt="UCFGarage logo">
                     <div>
                         <h3>UCFGarage</h3>
                         <p>UCF Garage data for Widgy, a widget-making app on iOS</p>
-                        <p><span id="flair">API</span></p>
+                        <p><span class="flair">API</span></p>
                     </div>
                 </section>
                 <section onclick="location.href='https://github.com/mbti0n/wallHTML';" id="projectCard" style="background: black">
-                    <img id="projectLogo" src="img/wallhtml.png" alt="wallHTML logo">
+                    <img class="projectLogo" src="img/wallhtml.png" alt="wallHTML logo">
                     <div>
                         <h3>wallHTML</h3>
                         <p>Python code to set an HTML page as wallpaper</p>
-                        <p><span id="flair">Customization</span> <span id="flair">CLI</span></p>
+                        <p><span class="flair">Customization</span> <span class="flair">CLI</span></p>
                     </div>
                 </section>
             </div>
@@ -189,7 +214,6 @@
     <hr>
     <footer>
         <p>MBtion // Jimmy Bui • <span id="yearCurrent"><script>document.getElementById("yearCurrent").textContent = new Date().getFullYear()</script></span></p>
-        <p><span style="color: #b8b8b8">Based in Orlando, FL.</span></p>
     </footer>
 </body>
 </html>
