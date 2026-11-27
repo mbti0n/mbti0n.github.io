@@ -261,7 +261,7 @@ header {
     text-align: center;
 }
 
-#info {
+.info {
     text-align: center;
     background-color: #0000005e;
     padding-bottom: 15px;
@@ -352,6 +352,11 @@ header {
 
     .socialButtonLayout {
         margin-top: 20px;
+    }
+
+    .info {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
