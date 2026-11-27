@@ -312,6 +312,10 @@ header {
     margin-right: auto;
 }
 
+.blank, .blankOther {
+    display: none;
+}
+
 @media screen and (max-width: 300px) {
     html {
         font-size: 80%;
